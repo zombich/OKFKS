@@ -1,0 +1,7 @@
+string mes = "Hi brad!!!!";
+
+int a = 1 + 3;
+
+mes = mes + a;
+
+Message(mes);

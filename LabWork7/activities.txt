@@ -1,0 +1,31 @@
+DateTime date1 = DateTime.Parse("12-10-2026 23:32:59");
+DateTime date2 = DateTime.Parse("07-10-2021 20:10:00");
+DateTime date3 = DateTime.Parse("05-09-2023 13:56:00");
+DateTime date4 = DateTime.Parse("10-11-2025 15:22:00");
+DateTime date5 = DateTime.Parse("10-11-2026 10:32:00");
+
+MyActivity.CreateActivity("activity1",date1,"best activity");
+MyActivity.CreateActivity("fish",date2,"fishing");
+MyActivity.CreateActivity("activity33",date3,"z");
+MyActivity.CreateActivity("act4",date4,"top");
+MyActivity.CreateActivity("activ6",date5,"12312321 qweqwe");
+
+var act = MyActivity.GetActivityById(1);
+Message(act.Name);
+
+MyActivity.UpdateActivity(1, "upd activ", date2, "upd desc");
+act = MyActivity.GetActivityById(1);
+
+Message(act.Name);
+
+MyActivity.RemoveActivity(2);
+
+var activities = MyActivity.GetAcitivities();
+
+act = activities.FirstOrDefault();
+
+Message(act.Description);
+
+
+
+

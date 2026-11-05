@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ConsoleClient/ConsoleClient.csproj" />
+  <Project Path="LabWork7/LabWork7.csproj" />
+</Solution>

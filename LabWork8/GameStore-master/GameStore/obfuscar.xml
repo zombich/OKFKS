@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Obfuscator>
+	<Var name="InPath" value="bin\Release\net8.0-windows7.0" />
+	<Var name="OutPath" value="bin\golda" />
+	<Var name="KeepPublicApi" value="true"/>
+	<Var name="HidePrivateApi" value="true" />
+	<Var name="HideStrings" value="true" />
+	<Module file="$(InPath)\GameStore.dll"/>
+</Obfuscator>

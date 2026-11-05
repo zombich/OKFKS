@@ -1,0 +1,41 @@
+﻿<Window x:Class="LabWork7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabWork7"
+        mc:Ignorable="d"
+        Title="Scripts" Height="450" Width="800" Loaded="Window_Loaded">
+    <StackPanel>
+        <TabControl>
+            <TabItem Header="Scripts">
+                <StackPanel>
+                <TextBox x:Name="ScriptTextBox" Height="353" AcceptsReturn="True"/>
+                <Button Click="ExecuteButton_Click">Выполнить</Button>
+                <Button Click="LoadButton_Click">Загрузить</Button>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Events">
+                <StackPanel>
+                    <DockPanel LastChildFill="True">
+                        <Label>Название:</Label>
+                        <TextBox x:Name="NameTextBox"/>
+                    </DockPanel>
+                    <DockPanel LastChildFill="True">
+                        <Label>Дата:</Label>
+                        <TextBox x:Name="DateTextBox"/>
+                    </DockPanel>
+                    <DockPanel LastChildFill="True">
+                        <Label>Описание:</Label>
+                        <TextBox x:Name="DescriptionTextBox"/>
+                    </DockPanel>
+                    <Button Click="CreateActivityButton_Click">Создать</Button>
+                    <DataGrid x:Name="ActivitiesDataGrid">
+                        
+                    </DataGrid>
+                    <Button Click="RefreshButton_Click">Обновить</Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+</Window>
