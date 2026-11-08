@@ -10,7 +10,7 @@ namespace LabWork7
         private ScriptOptions scriptOptions { get; set; }
         public ScriptingHost()
         {
-            scriptOptions = ScriptOptions.Default.WithReferences(AppDomain.CurrentDomain.GetAssemblies()).WithImports("System", "System.Collections.Generic", "System.Linq", "LabWork7.MyActivity");
+            scriptOptions = ScriptOptions.Default.WithReferences(AppDomain.CurrentDomain.GetAssemblies()).WithImports("System", "System.Collections.Generic", "System.Linq", "LabWork7");
         }
         public async Task ExecuteAsync(string code)
         {
