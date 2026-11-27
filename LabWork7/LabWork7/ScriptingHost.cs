@@ -23,7 +23,7 @@ namespace LabWork7
             {
                 using (NamedPipeServerStream server = new NamedPipeServerStream("mypipe", PipeDirection.In))
                 {
-                    server.WaitForConnection();
+                    await server.WaitForConnectionAsync();
                     await HandleClient(server);
                 }
             }

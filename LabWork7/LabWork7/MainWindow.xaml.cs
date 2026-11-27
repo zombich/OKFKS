@@ -38,7 +38,7 @@ namespace LabWork7
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //await scriptingHost.Run();
+            await scriptingHost.Run();
         }
 
         private void LoadButton_Click(object sender, RoutedEventArgs e)

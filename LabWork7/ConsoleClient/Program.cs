@@ -3,7 +3,7 @@
 pipe.Connect();
 
 var writer = new StreamWriter(pipe);
-writer.WriteLine("Message(\"Hello\")");
+writer.WriteLine("Message(\"Hello from console\")");
 
 writer.Flush();
 writer.Close();
